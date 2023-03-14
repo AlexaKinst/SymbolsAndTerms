@@ -2,8 +2,13 @@ package ua.hillel;
 
 public class FindSymbolOccurance {
     public static void main(String[] args) {
-        String line = "You are your only limit";
 
+        findSymbolOccurrance();
+    }
+
+    public static void findSymbolOccurrance() {
+
+        String line = "You are your only limit";
         char[] a = line.toCharArray();
         System.out.println("Строка: " + line);
         System.out.println("Дублюючі символи строки:");

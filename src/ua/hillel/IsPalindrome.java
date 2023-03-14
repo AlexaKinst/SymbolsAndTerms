@@ -2,7 +2,13 @@ package ua.hillel;
 
 public class IsPalindrome {
     public static void main(String[] args) {
+
         String str = "ERE";
+        boolean result = isPalindrome(str);
+        System.out.println(result);
+    }
+
+    public static boolean isPalindrome(String str) {
 
         char[] array = str.toCharArray();
         String a = "";
@@ -10,6 +16,6 @@ public class IsPalindrome {
             a = a + array[i];
         }
 
-        System.out.println(str.equals(a));
+        return str.equals(a);
     }
 }
